@@ -11,39 +11,57 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-            <div class="header-content">
-            <div class="empty"></div>
-        <ul class="header-nav">
-            <li class="header-nav__nav"><a href="index.html" >Главная</a></li>
-            <li class="header-nav__nav"><a href="catalog/catalog.html" >Каталог</a></li>
-            <div class="dropdown" data-dropdown>
-                <button class="header-nav__nav link" data-dropdown-button>Услуги</button>
-                <div class="dropdown-menu uslugi grid">
-                    <div class="dropdown-heading"></div>
-                    <div class="dropdown-links">
-                        <a href="#" class="link">Подбор картин</a>
-                        <a href="#" class="link">Примерка картин</a>
-                        <a href="uslugi/kartina-v-podarok.html" class="link">Картина в подарок</a>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/img/gallery.png" alt="" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/catalog/catalog.html" class="nav__link active-link">Каталог</a>
+                    </li>
+                    <div class="dropdown nav__item" data-dropdown>
+                        <button class="nav link" data-dropdown-button>Услуги</button>
+                        <div class="dropdown-menu uslugi-grid">
+                            <div class="dropdown-heading"></div>
+                            <div class="dropdown-links">
+                                <a href="#" class="link">Подбор картин</a>
+                                <a href="#" class="link">Примерка картин</a>
+                                <a href="uslugi/kartina-v-podarok.html" class="link">Картина в подарок</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <li class="header-nav__logo"><a href="index.html"><img class="logo" src="img/gallery.png" alt="Gallery"></a></li>
-            <li class="header-nav__nav"><a href="#" >Художники</a></li>
-            <div class="dropdown" data-dropdown>
-                <button class="header-nav__nav link" data-dropdown-button>Блог</button>
-                <div class="dropdown-menu blog grid">
-                    <div class="dropdown-heading"></div>
-                    <div class="dropdown-links">
-                        <a href="blog.html" class="link">Все</a>
-                        <a href="#" class="link">Последнее</a>
-                        <a href="#" class="link">Популярное</a>
+                    <li class="nav__item">
+                        <a href="#trick" class="nav__link">Художники</a>
+                    </li>
+                    <div class="dropdown nav__item" data-dropdown>
+                        <button class="nav link" data-dropdown-button>Блог</button>
+                        <div class="dropdown-menu blog-grid">
+                            <div class="dropdown-heading"></div>
+                            <div class="dropdown-links">
+                                <a href="blog.html" class="link">Все</a>
+                                <a href="#" class="link">Последнее</a>
+                                <a href="#" class="link">Популярное</a>
+                            </div>
+                        </div>
                     </div>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">О Нас</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
                 </div>
+
+                <img src="assets/img/nav-img.png" alt="" class="nav__img">
             </div>
-            <li class="header-nav__nav"><a href="#" >О Нас</a></li>
-        </ul>
-        <div class="header-contact"><i class='bx bx-phone' ></i>+7(905)239-69-77</div>  
-        </div>   
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
     </header>
 
     <!--==================== MAIN ====================--> 
@@ -52,22 +70,22 @@
         <div class="main__img"><img src="img/mainshot.jpg" alt="">
         </div>
         <div class="main__content" id="catalog">
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/1.jpg"     alt="">Вася Пупкин</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/2.jpg"     alt="">Сон Залупкин</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/3.jpg"     alt="">Стоша Говнозад</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/4.jpg"     alt="">Тихон Апальцах</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/5.jpg"     alt="">Иван Петров</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/6.jpg"     alt="">Эбал Котов</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/7.jpg"     alt="">Идеи Закончились</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/8.jpg"     alt="">А Место Осталось</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/9.jpg"     alt="">Я Заебалась</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/10.jpg"     alt="">Картины Тут</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/11.jpg"     alt="">Шмар Проститут</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/12.jpg"     alt="">Александр Закидон</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/13.jpg"     alt="">Леонид Гандон</a></div> 
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/14.jpg"     alt="">Дед Пей Таблетки</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/15.jpg"     alt="">Хуй В Сетке</a></div>
-            <div><a href='#'  class="main__row"><img name="Вася Пупкин"   src="img/16.jpg"     alt="">Крайний На Этой Ветке</a></div>
+            <div><a href='#'  class="main__row first"><img name="Вася Пупкин"   src="img/1.jpg"     alt="">Вася Пупкин</a></div>
+            <div><a href='#'  class="main__row first"><img name="Вася Пупкин"   src="img/2.jpg"     alt="">Сон Залупкин</a></div>
+            <div><a href='#'  class="main__row first"><img name="Вася Пупкин"   src="img/3.jpg"     alt="">Стоша Говнозад</a></div>
+            <div><a href='#'  class="main__row second"><img name="Вася Пупкин"   src="img/4.jpg"     alt="">Тихон Апальцах</a></div>
+            <div><a href='#'  class="main__row second"><img name="Вася Пупкин"   src="img/5.jpg"     alt="">Иван Петров</a></div>
+            <div><a href='#'  class="main__row second"><img name="Вася Пупкин"   src="img/6.jpg"     alt="">Эбал Котов</a></div>
+            <div><a href='#'  class="main__row third"><img name="Вася Пупкин"   src="img/7.jpg"     alt="">Идеи Закончились</a></div>
+            <div><a href='#'  class="main__row third"><img name="Вася Пупкин"   src="img/8.jpg"     alt="">А Место Осталось</a></div>
+            <div><a href='#'  class="main__row third"><img name="Вася Пупкин"   src="img/9.jpg"     alt="">Я Заебалась</a></div>
+            <div><a href='#'  class="main__row fouth"><img name="Вася Пупкин"   src="img/10.jpg"     alt="">Картины Тут</a></div>
+            <div><a href='#'  class="main__row fouth"><img name="Вася Пупкин"   src="img/11.jpg"     alt="">Шмар Проститут</a></div>
+            <div><a href='#'  class="main__row fouth"><img name="Вася Пупкин"   src="img/12.jpg"     alt="">Александр Закидон</a></div>
+            <div><a href='#'  class="main__row fifth"><img name="Вася Пупкин"   src="img/13.jpg"     alt="">Леонид Гандон</a></div> 
+            <div><a href='#'  class="main__row fifth"><img name="Вася Пупкин"   src="img/14.jpg"     alt="">Дед Пей Таблетки</a></div>
+            <div><a href='#'  class="main__row fifth"><img name="Вася Пупкин"   src="img/15.jpg"     alt="">Хуй В Сетке</a></div>
+            <div><a href='#'  class="main__row sixth"><img name="Вася Пупкин"   src="img/16.jpg"     alt="">Крайний На Этой Ветке</a></div>
         </div>
     </div>
 
@@ -148,6 +166,9 @@
         <span class="footer__copy">&#169; Tharsis, Все права защищены</span>
 
     </footer>
+
+<!--=============== SCROLL REVEAL =(Копи-паста ривила с  Scrollrevealjs.)==============-->
+<script src="/scrollreveal.min.js"></script>
     
 <script src="script.js" defer></script>
 </body>
